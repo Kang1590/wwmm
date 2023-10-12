@@ -27,6 +27,7 @@ a {
 /* 상단부분 */
 header {
   display: flex;
+  padding: 0 20px;
 }
 #logo {
   flex-basis: 300px;
@@ -59,6 +60,11 @@ header {
 }
 #icons a {
   margin: 20px;
+  width: 50px;
+  transition: 0.2s;
+}
+#icons a:hover {
+  filter: opacity(60%);
 }
 
 /* 메인부분 */
@@ -76,6 +82,21 @@ header {
 .left ul li h2 {
   margin-bottom: 80px;
 }
+.left ul li a {
+  transition: 0.2s;
+}
+.left ul li a:hover:nth-child(1) {
+  color: rgb(145, 76, 145);
+}
+.left ul li a:hover:nth-child(2) {
+  color: rgb(81, 155, 81);
+}
+.left ul li a:hover:nth-child(3) {
+  color: rgb(55, 157, 229);
+}
+.left ul li a:hover:nth-child(4) {
+  color: rgb(215, 95, 193);
+}
 
 #main .right {
   display: flex;
@@ -84,22 +105,83 @@ header {
 
 .case {
   flex-basis: 400px;
+  position: relative;
 }
 .case h2 {
   display: inline-block;
   border-bottom: 2px solid #888;
   margin-bottom: 20px;
 }
+.case span {
+  position: absolute;
+  top: 37%;
+  left: 25%;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  color: white;
+  transition: 0.5s;
+}
+.case b {
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.case a img {
+  transition: 0.5s;
+}
+.case a:hover img {
+  filter: brightness(0.4);
+}
+.case a:hover span,
+.case a:hover b {
+  opacity: 1;
+}
 .best {
   flex-basis: 400px;
+  position: relative;
 }
 .best h2 {
   display: inline-block;
   border-bottom: 2px solid #888;
   margin-bottom: 20px;
 }
+
+.best span {
+  position: absolute;
+  top: 37%;
+  left: 18%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.best b {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 37%;
+  left: 27%;
+  opacity: 0;
+  transition: 0.5s;
+}
 .best img {
   width: 300px;
+  transition: 0.5s;
+}
+.best a:hover img {
+  filter: brightness(0.4);
+}
+.best a:hover span,
+.best a:hover b {
+  opacity: 1;
 }
 
 /* 푸터부분 */
