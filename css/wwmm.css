@@ -222,17 +222,28 @@ footer {
 }
 
 /* 반응형 */
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   #logo {
     flex: 1;
   }
   #search {
-    flex: 3;
+    flex-basis: 100%;
   }
   #icons {
     flex-basis: 100%;
   }
   #logo img {
-    min-width: 150px;
+    min-width: 100px;
+  }
+  #main .right {
+    flex-direction: column;
+    flex: 2.5;
+    padding-left: 30px;
+  }
+  #main .right img {
+    width: 100%;
+  }
+  #main .left {
+    flex: 1;
   }
 }
