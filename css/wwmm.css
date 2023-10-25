@@ -29,7 +29,6 @@ header {
   display: flex;
   width: 95%;
   margin: auto;
-  background: pink;
   overflow: hidden;
 }
 #logo {
@@ -230,7 +229,7 @@ footer {
     flex-basis: 100%;
   }
   #icons {
-    flex-basis: 100%;
+    display: none;
   }
   #logo img {
     min-width: 100px;
